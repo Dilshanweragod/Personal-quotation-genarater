@@ -14,6 +14,10 @@ h1 {
   font-size: 2.5rem;
 }
 
+h5 {
+  font-weight: 600;
+}
+
 p {
     margin-bottom: 0.5rem;
 }
@@ -33,6 +37,68 @@ table th, table td {
 
 .table th, .table td:not(.text-end) {
     text-align: center;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+}
+
+.btn-info {
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+    color: #000;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.remove {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px 8px;
+}
+
+/* Enhanced styling for sections */
+.bg-primary {
+    background-color: #0d6efd !important;
+}
+
+.bg-success {
+    background-color: #198754 !important;
+}
+
+.rounded-top {
+    border-top-left-radius: 0.375rem !important;
+    border-top-right-radius: 0.375rem !important;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
 }
 
 /* Print-specific styles for compacting the layout */
@@ -59,6 +125,11 @@ table th, table td {
       margin-bottom: 0.5rem !important;
   }
 
+  h5 {
+      font-size: 1rem !important;
+      margin-bottom: 0.25rem !important;
+  }
+
   p {
       margin-bottom: 2px !important;
   }
@@ -78,5 +149,41 @@ table th, table td {
   .remove,
   #addItem {
     display: none !important;
+  }
+
+  /* Print customer details as text */
+  .form-control {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    font-size: 12px !important;
+  }
+
+  .form-select {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    font-size: 12px !important;
+  }
+
+  textarea.form-control {
+    resize: none !important;
+    height: auto !important;
+  }
+
+  /* Hide labels in print */
+  .form-label {
+    display: none !important;
+  }
+
+  /* Compact sections for print */
+  .bg-primary, .bg-success {
+    background: #f8f9fa !important;
+    color: #000 !important;
+    padding: 0.25rem 0.5rem !important;
+  }
+
+  .border {
+    border: 1px solid #dee2e6 !important;
   }
 }
